@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title>
+
+<pre id="source">    </pre>
+<script src="hafta5.js">
+// document.write("Hello World");
+
+</script>
+
+<script type="text/javascript" >
+    var txt1="what a very";
+    var txt2="nice day";
+    document.write(txt1+" "+txt2);
+    var firstname,lastname;
+    firstname ="Selenay"
+    lastname ="Aydemir"
+
+    var sayi1=5;
+    var sayi2=10;
+    var sonuc=sayi1+sayi2;
+    document.write("Benim adım" + " "+ "firstname")
+    document.write("<br>")
+    document.write("Benim soyadım" + " " + "lastname")
+
+    var x=2+2;
+    document.write(x);
+    document.write("<br>");
+
+    x="2"+"2";
+    document.write(x);    
+    document.write("<br>");
+
+    x=2+"2"
+    document.write(x);
+    document.write("<br>");
+
+    x="2"+2
+    document.write(x);
+    document.write("<br>");
+
+
+    var age=21;
+    if(age<18){
+        document.write("Henüz reşit değilsiniz");
+    }
+    else if(age>=18 && age<23){
+        document.write("Reşitsiniz ancak 23 yaşına gelmeden üniversiteyi bitirmelisiniz");
+    }
+
+    
+var time= new Date().getHours();
+    if(time<15){
+        document.write("Günaydın");
+    }
+    else if(time<17){
+        document.write("İyi günler");
+    }
+    else{
+        document.write("İyi akşamlar");
+    }
+
+    var günler=["Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"];
+    switch(new Date().getDay()){
+        case 0:
+            document.write("<br> + Bugün günlerden"  + günler[0]);
+            break;
+        case 1:
+            document.write("<br> + Bugün günlerden"  + günler[1]);
+            break;
+        case 2:
+            document.write("<br> + Bugün günlerden"  + günler[2]);
+            break;
+        case 3:
+            document.write("<br> + Bugün günlerden"  + günler[3]);
+            break;
+        case 4:
+            document.write("<br> + Bugün günlerden"  + günler[4]);
+            break;
+        case 5:
+            document.write("<br> + Bugün günlerden"  + günler[5]);
+            break;
+        case 6:
+            document.write("<br> + Bugün günlerden"  + günler[6]);
+            break;
+    }
+ 
+    alert("Lütfen tarayıyı yeniden başlatın");
+    confirm("Lütfen çerezleri kabul edin");
+    prompt("Lütfen adınızı giriniz");
+
+function myFunction() {
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Pazar";
+            break;
+        case 1:
+            day = "Pazartesi";
+            break;
+        case 2:
+            day = "Salı";
+            break;
+        case 3:
+            day = "Çarşamba";
+            break;
+        case 4:
+            day = "Perşembe";
+            break;
+        case 5:
+            day = "Cuma";
+            break;
+        case 6:
+            day = "Cumartesi";
+    }
+  }
+
+  function Uyarı(){
+    alert("Bu bir uyarı mesajıdır");
+    
+  }
+</script>
+<form>
+    <input type="button" value="Uyarı ver" onclick="Uyarı()">
+</form>
+
+
+
+    
+</body>
+</html>
